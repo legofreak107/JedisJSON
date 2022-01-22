@@ -1,6 +1,6 @@
 import lombok.SneakyThrows;
-import nl.itslars.jedisjson.JedisJSON;
-import nl.itslars.jedisjson.listeners.types.Channel;
+import net.desertion.jedisjson.JedisJSON;
+import net.desertion.jedisjson.listeners.types.Channel;
 
 public class ClientB {
 

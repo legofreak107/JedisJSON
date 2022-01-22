@@ -1,18 +1,19 @@
-package net.desertion.jedisjson.packet.packets.spacestationpackets;
+package net.desertion.jedisjson.packet.packets.datapackets;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.desertion.jedisjson.packet.JedisJSONPacket;
 import net.desertion.jedisjson.packet.packets.responsepackets.ResponsePacket;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SetSpaceStationPacket extends ResponsePacket {
+public class UpdateDataPacket extends ResponsePacket {
 
-    private String stationUid;
+    private String uid;
+    private String oldData;
+    private String newData;
 
 }
