@@ -1,4 +1,4 @@
-package nl.itslars.jedisjson.packet;
+package net.desertion.jedisjson.packet;
 
 import lombok.Getter;
 import lombok.Setter;

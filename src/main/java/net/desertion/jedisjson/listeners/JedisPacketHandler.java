@@ -1,10 +1,10 @@
-package nl.itslars.jedisjson.listeners;
+package net.desertion.jedisjson.listeners;
 
 import lombok.Getter;
-import nl.itslars.jedisjson.JedisJSON;
-import nl.itslars.jedisjson.listeners.types.JedisJSONPacketListener;
-import nl.itslars.jedisjson.packet.JedisJSONPacket;
-import nl.itslars.jedisjson.packet.JedisJSONPacketHeader;
+import net.desertion.jedisjson.JedisJSON;
+import net.desertion.jedisjson.packet.JedisJSONPacket;
+import net.desertion.jedisjson.packet.JedisJSONPacketHeader;
+import net.desertion.jedisjson.listeners.types.JedisJSONPacketListener;
 import redis.clients.jedis.JedisPubSub;
 
 import java.util.Map;

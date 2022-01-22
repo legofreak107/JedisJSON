@@ -1,13 +1,13 @@
-package nl.itslars.jedisjson.listeners.types;
+package net.desertion.jedisjson.listeners.types;
 
 import com.google.gson.Gson;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import nl.itslars.jedisjson.JedisJSON;
-import nl.itslars.jedisjson.packet.JedisJSONPacket;
-import nl.itslars.jedisjson.packet.conversation.ConversationEndPacket;
-import nl.itslars.jedisjson.packet.conversation.ConversationStartPacket;
+import net.desertion.jedisjson.JedisJSON;
+import net.desertion.jedisjson.packet.JedisJSONPacket;
+import net.desertion.jedisjson.packet.conversation.ConversationEndPacket;
+import net.desertion.jedisjson.packet.conversation.ConversationStartPacket;
 
 import java.io.Closeable;
 import java.lang.reflect.Type;

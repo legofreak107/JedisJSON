@@ -1,7 +1,7 @@
-package nl.itslars.jedisjson.listeners;
+package net.desertion.jedisjson.listeners;
 
-import nl.itslars.jedisjson.listeners.types.JedisJSONPacketListener;
-import nl.itslars.jedisjson.packet.JedisJSONPacketHeader;
+import net.desertion.jedisjson.listeners.types.JedisJSONPacketListener;
+import net.desertion.jedisjson.packet.JedisJSONPacketHeader;
 
 import java.util.HashMap;
 import java.util.Map;

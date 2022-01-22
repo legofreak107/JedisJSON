@@ -1,8 +1,8 @@
-package nl.itslars.jedisjson.listeners.types;
+package net.desertion.jedisjson.listeners.types;
 
 import com.google.gson.Gson;
-import nl.itslars.jedisjson.JedisJSON;
-import nl.itslars.jedisjson.packet.JedisJSONPacket;
+import net.desertion.jedisjson.JedisJSON;
+import net.desertion.jedisjson.packet.JedisJSONPacket;
 
 import java.lang.reflect.Type;
 import java.util.function.Consumer;

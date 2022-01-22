@@ -1,15 +1,15 @@
-package nl.itslars.jedisjson;
+package net.desertion.jedisjson;
 
 import com.google.gson.Gson;
 import lombok.Getter;
 import lombok.SneakyThrows;
-import nl.itslars.jedisjson.listeners.JedisPacketHandler;
-import nl.itslars.jedisjson.listeners.types.Channel;
-import nl.itslars.jedisjson.listeners.types.Conversation;
-import nl.itslars.jedisjson.listeners.types.NewIncomingPacketListener;
-import nl.itslars.jedisjson.listeners.types.SingleResponseListener;
-import nl.itslars.jedisjson.packet.JedisJSONPacket;
-import nl.itslars.jedisjson.packet.JedisJSONPacketHeader;
+import net.desertion.jedisjson.listeners.JedisPacketHandler;
+import net.desertion.jedisjson.listeners.types.Channel;
+import net.desertion.jedisjson.listeners.types.Conversation;
+import net.desertion.jedisjson.listeners.types.NewIncomingPacketListener;
+import net.desertion.jedisjson.listeners.types.SingleResponseListener;
+import net.desertion.jedisjson.packet.JedisJSONPacket;
+import net.desertion.jedisjson.packet.JedisJSONPacketHeader;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
