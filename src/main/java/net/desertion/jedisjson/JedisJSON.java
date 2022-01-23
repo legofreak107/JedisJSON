@@ -62,6 +62,7 @@ public class JedisJSON {
 
         Conversation.initializeConversationStructure(this);
         LOGGER.info("JedisJSON enabled!");
+        LOGGER.info("Registered as: " + clientName);
     }
 
     public void shutdown() {
@@ -83,12 +84,16 @@ public class JedisJSON {
      * @param <T> The packet type
      */
     public <T extends JedisJSONPacket> void sendWithId(String target, T packet, String packetID, Gson gson) {
-        packet.setId(packetID);
-        packet.setSource(clientName);
-        String data = gson.toJson(packet);
-        JedisJSONPacketHeader header = new JedisJSONPacketHeader(packetID, clientName, data, packet.getClass().getSimpleName());
-        String packetString = defaultGson.toJson(header);
-        publishJedis.publish(target, packetString);
+
+        CompletableFuture.runAsync(() -> {
+            packet.setId(packetID);
+            packet.setSource(clientName);
+            String data = gson.toJson(packet);
+            JedisJSONPacketHeader header = new JedisJSONPacketHeader(packetID, clientName, data, packet.getClass().getSimpleName());
+            String packetString = defaultGson.toJson(header);
+            LOGGER.info("Sending: " + target + " - " + packetString);
+            publishJedis.publish(target, packetString);
+        });
     }
 
     public <T extends JedisJSONPacket> void send(String target, T packet) {
